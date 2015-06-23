@@ -1,0 +1,35 @@
+{
+  "name": "egghead-react",
+  "version": "0.1.0",
+  "description": "assignment",
+  "main": "server.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha test/**/*test.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jayspringate/egghead-react.git"
+  },
+  "author": "jay.springate@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jayspringate/egghead-react/issues"
+  },
+  "homepage": "https://github.com/jayspringate/egghead-react",
+  "devDependencies": {
+    "browserify": "^10.2.4",
+    "gulp": "^3.9.0",
+    "reactify": "^1.1.1",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "dependencies": {
+    "express": "^4.12.4",
+    "react": "^0.13.3",
+    "react-async": "^2.1.0",
+    "react-router-component": "^0.25.1"
+  }
+}
