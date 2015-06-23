@@ -8,14 +8,14 @@ gulp.task('browserify', function() {
       .transform('reactify')
       .bundle()
       .pipe(source('client.js'))
-      .pipe(gulp.dest('dist/js'));
+      .pipe(gulp.dest('build/js'));
 });
 
 gulp.task('copy', function() {
   gulp.src('app/index.html')
-    .pipe(gulp.dest('dist'));
+    .pipe(gulp.dest('build'));
   gulp.src('app/assets/**/*/*')
-    .pipe(gulp.dest('dist/assets'));
+    .pipe(gulp.dest('build/assets'));
 });
 
 gulp.task('default', ['browserify', 'copy'], function() {
